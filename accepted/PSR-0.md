@@ -45,8 +45,7 @@ proposed standards are autoloaded.
 ```php
 <?php
 
-function autoload($className)
-{
+function autoload($className) {
     $className = ltrim($className, '\\');
     $fileName  = '';
     $namespace = '';
@@ -59,6 +58,7 @@ function autoload($className)
 
     require $fileName;
 }
+?>
 ```
 
 SplClassLoader Implementation
